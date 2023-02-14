@@ -5,7 +5,7 @@ import { HackerNewsService } from './app.service';
 @Component({
   selector: 'hacker-component',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 
 export class HackerNewsComponent {
