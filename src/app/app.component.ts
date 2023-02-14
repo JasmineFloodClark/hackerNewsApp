@@ -11,6 +11,6 @@ import { HackerNewsService } from './app.service';
 export class HackerNewsComponent {
   news = {};
   constructor(private HackerNewsService: HackerNewsService) {
-    this.HackerNewsService.getNews().subscribe(data: any => this.news = data);
+    this.HackerNewsService.getNews().subscribe(data => this.news = data);
   }
 }
