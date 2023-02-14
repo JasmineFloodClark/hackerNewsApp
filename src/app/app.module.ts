@@ -1,18 +1,21 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { HackerNewsComponent } from './app.component';
+import { HackerNewsService } from './app.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    HackerNewsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [HackerNewsService],
+  bootstrap: [HackerNewsComponent]
 })
 export class AppModule { }
